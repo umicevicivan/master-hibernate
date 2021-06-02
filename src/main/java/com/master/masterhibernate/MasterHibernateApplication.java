@@ -20,7 +20,6 @@ public class MasterHibernateApplication implements CommandLineRunner {
     public void run(String... args) throws Exception {
         System.out.println("aaaa");
 
-        System.out.println(avion1Service.findAll());
-
+        System.out.println(avion1Service.findAll().get(0));
     }
 }
